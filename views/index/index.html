@@ -1,5 +1,10 @@
 <h1>Welcome to Collectify</h1>
 
+<form>
+    <input placeholder="email" ng-model="user.email" type="email" name="email" required>
+    <input placeholder="password" ng-model="user.password" type="password" name="password" required>
+    <button ng-click="connect( user )">Sign In</button>
+</form>
 <a href="#/create-user">Create a new user</a>
 
 <div id="container">
