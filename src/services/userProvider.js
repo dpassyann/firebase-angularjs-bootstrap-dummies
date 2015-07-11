@@ -5,6 +5,7 @@
 'use strict';
 
 app.service('userProvider', function (user) {
+
     var ref = new Firebase("https://boiling-heat-1339.firebaseio.com/");
 
     ref.createUser({
