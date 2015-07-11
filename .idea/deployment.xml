@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="collectify.io">
+    <serverData>
+      <paths name="collectify.io">
+        <serverdata>
+          <mappings>
+            <mapping deploy="collecity.io" local="$PROJECT_DIR$" web="collecity.io" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
