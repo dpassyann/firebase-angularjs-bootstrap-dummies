@@ -4,7 +4,7 @@
 'use strict';
 
 app
-    .controller('index', function ( $scope ) {
+    .controller('index', function ( $scope, userProvider, $location) {
 
     })
 
