@@ -32,9 +32,8 @@ app.service('userProvider', function () {
                 auth = authData.auth;
                 console.log("Authenticated successfully with payload:", authData);
             }
-        }, {
-            remember:sessionOnly
-        })
+        }//,{remember:sessionOnly}
+        )
     }
 
     this.getAuth = function(){
