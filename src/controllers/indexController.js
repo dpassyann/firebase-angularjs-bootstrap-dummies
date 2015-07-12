@@ -5,7 +5,13 @@
 
 app
     .controller('index', function ( $scope, userProvider, $location) {
+        $scope.session = userProvider.getAuth();
 
+        $scope.connect = function( user ){
+            userProvider.connect( user );
+            //$location.url( '/' );
+            $scope.session = userProvider.getAuth();
+        }
     })
 
     .controller('indexCreateUser', function ( $scope, userProvider, $location ) {
