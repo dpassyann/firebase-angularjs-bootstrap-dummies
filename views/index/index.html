@@ -1,19 +1,20 @@
 <h1>Welcome to Collectify</h1>
 
-<form ng-hide="session.user">
-    <input placeholder="email" ng-model="user.email" type="email" name="email" required>
-    <input placeholder="password" ng-model="user.password" type="password" name="password" required>
-    <button ng-click="connect( user )">Sign In</button>
+<form class="form-signin" role="form" ng-hide="session">
+    <input placeholder="email" ng-model="user.email" type="email" name="email" required class="form-control">
+    <input placeholder="password" ng-model="user.password" type="password" name="password" required class="form-control">
+    <button ng-click="connect( user )" class="btn btn-lg btn-primary btn-block">Sign In</button>
 </form>
 
-<div ng-show="session.user">
-    <a href="#" ng-click="session.$logout()">Logout</a>
+<div ng-show="session">
+    Hello {{ session.password.email }} ! <img src="{{ session.password.profileImageURL }}" height="25" width="25"/>
+    <a href="" ng-click="disconnect()">Logout</a>
 </div>
 
-<div ng-hide="session.user">
+<div ng-hide="session">
     <a href="#/create-user">Create a new user</a>
 </div>
-<div id="container">
+<div id="container" class="container">
     <ul>
         <li><a href="#/items">List of items</a></li>
         <li><a href="#/items/new">Create new items</a></li>
