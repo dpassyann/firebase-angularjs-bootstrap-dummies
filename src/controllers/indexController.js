@@ -16,9 +16,7 @@ app
                     email: user.email,
                     password: user.password
                 }).then(function(authData) {
-                    console.log("2 => Logged in as:", authData);
                     $scope.session = auth.$getAuth();
-                    console.log("3 => Session:", $scope.session);
                     $location.url( '/' );
 
                 }).catch(function(error) {
